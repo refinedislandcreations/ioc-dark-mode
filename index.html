@@ -1,0 +1,51 @@
+<!doctype html>
+<html>
+
+<head>
+
+  <!-- SEO  -->
+  <title>My First Tailwind Project</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- GOOGLE FONTS -->
+
+  <!-- TAILWIND -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- TAILWIND CUSTOMIZE & EXTEND -->
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
+          }
+        }
+      }
+    }
+  </script>
+
+<!-- TAILWIND CUSTOM CLASSES -->
+<style type="text/tailwindcss">
+  @layer components {
+    .btn-primary {
+      @apply py-2 px-5 bg-violet-500 text-white font-semibold rounded-full shadow-md hover:bg-violet-700;
+    }
+  }
+</style>
+
+  <!-- CUSTOM CSS LINKS -->
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+  <h1 class="text-3xl font-bold underline btn-primary">
+    Hello world!
+  </h1>
+
+</body>
+
+</html>
