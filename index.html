@@ -197,33 +197,36 @@
 
 
 <div class="mt-10 mb-8">
-  <p class="text-5xl font-extrabold uppercase">Contact Us.</p>
+  <p class="text-5xl font-extrabold uppercase pb-8">Contact Us.</p>
 
   <div class="grid grid-cols-2">
-      <div>
+      <div class="mr-8">
         <form name="contact" method="POST" data-netlify="true" class="mb-4">
           <div class="mb-2">
-            <input id="fname" name="fname" type="text" placeholder="Name" class="" />
+            <input id="fname" name="fname" type="text" placeholder="Name" class="border-b-2" />
             <label for="fname" class="block"> Any name will do </label>
           </div>
         
           <div class="mb-2">
             
-            <input id="email" name="email" type="email" placeholder="Email" class="" />
+            <input id="email" name="email" type="email" placeholder="Email" class="border-b-2" />
             <label for="email" class="block"> We prefer something real </label>
           </div>
         
           <div class="mb-4">
             <label for="message" class="block"> Message </label>
-            <textarea id="message" name="message" placeholder="We love a good compliment" rows="6" class="min-w-full "></textarea>
+            <textarea id="message" name="message" placeholder="We love a good compliment" rows="6" class="min-w-full border-2"></textarea>
           </div>
         
           <input type="hidden" name="form-name" value="contact">
         
           <div class="text-center">
-            <button type="submit" class="submit-button">Send it baby</button>
+            <button type="submit" class="bg-black text-white uppercase p-2">Send it baby</button>
           </div>
         </form>
+      </div>
+      <div>
+        <img src="https://images.unsplash.com/photo-1501677110325-0b08be6ad95c?q=80&w=2018&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" class="w-full h-96 object-cover">
       </div>
   </div>
 </div>
