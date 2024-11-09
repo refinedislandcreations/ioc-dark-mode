@@ -2,3 +2,45 @@ body {
   font-size: 0.875rem;
   line-height: 1.25rem;
 }
+
+
+
+.dark-mode p {
+  margin-bottom: 0.3rem;
+  font-size: 0.9rem;
+}
+
+.toggle-container {
+  background-color: grey;
+  height: 2rem;
+  width: 4rem;
+  padding: 0.2rem;
+  display: inline-block;
+  border-radius: 3rem;
+  text-align: left;
+  cursor: pointer;
+}
+
+.toggle-ball {
+  background-color: white;
+  height: 1.6rem;
+  width: 1.6rem;
+  padding: 0.2rem;
+  display: inline-block;
+  border-radius: 2rem;
+}
+
+.toggle-container.dark-mode-active {
+  background-color: #ade6d8;
+  text-align: right;
+}
+
+
+
+/* Dark Mode Styles */
+.dark-mode-active {
+  background-color: rgb(60,60,60);
+  color: white;
+}
+
+
