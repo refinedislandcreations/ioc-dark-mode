@@ -99,7 +99,7 @@
 <!----------Gallery----------->
 <section class="container mx-auto px-8">
   <div class="sm:mt-8 mb-2 sm:mb-8 max-w-2xl m-auto text-left sm:text-center">
-    <h2 class="text-3xl sm:text-5xl font-extrabold uppercase pb-1 sm:pb-3">Another <span class="text-lg normal-case block">Sick Heading for Attention</span></h2>
+    <h2 class="text-3xl sm:text-5xl font-extrabold uppercase pb-1 sm:pb-3">Another <span class="text-base sm:text-lg normal-case block">Sick Heading for Attention</span></h2>
     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Explicabo enim laboriosam fuga nulla numquam sit, illo pariatur expedita, vitae hic quidem reprehenderit dolore ipsum exercitationem. Tenetur porro at delectus odio! Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam animi nemo labore incidunt reiciendis. Iste omnis vel, iusto minus eligendi quaerat enim fugit laudantium consectetur incidunt nisi consequuntur deleniti adipisci?</p>
   </div>
   
@@ -140,7 +140,7 @@
   </div>
   
   
-  <div class="flex flex-col sm:grid sm:grid-cols-2 h-full">
+  <div class="flex flex-col sm:grid sm:grid-cols-2 h-full sm:gap-4">
     <div>
       <p class="uppercase font-bold text-base mt-2 sm:mt-0 pb-2 sm:pb-8">Another<br><span class="font-normal normal-case text-sm border-t-2">Sick Heading for Attention</span></p>
   
@@ -172,7 +172,7 @@
 
 <!----------Rotate text-------->
 
-<div class="container mt-10 mb-24">
+<div class="container sm:px-8 mt-5 sm:mt-10 mb-10 sm:mb-24">
 
 	<div class="relative">
 		<p class="[writing-mode:vertical-rl] rotate-180 absolute left-0 text-5xl font-extrabold uppercase"> Gallery </p>
@@ -190,7 +190,7 @@
 
 <!----Gallery------->
 
-<div class="container mx-auto px-8 mt-10 flex overflow-x-auto gap-4">
+<div class="container mx-auto px-8 mt-5 sm:mt-10 flex overflow-x-auto gap-4">
   
     <img src="https://images.unsplash.com/photo-1615192232476-758a110dac9f?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" class="w-2/3 sm:w-1/4 object-contain shrink-0">
 
@@ -211,11 +211,11 @@
 <!----------Contact-------------->
 
 
-<div class="container mx-auto px-8 mt-32 mb-12">
+<div class="container mx-auto px-8 mt-20 sm:mt-32 mb-5 sm:mb-12">
   <p class="text-3xl sm:text-5xl font-extrabold uppercase pb-8">Contact Us.</p>
 
-  <div class="grid grid-cols-2">
-      <div class="mr-8">
+  <div class="flex flex-col sm:grid grid-cols-2">
+      <div class="sm:mr-8">
         <form name="contact" method="POST" data-netlify="true" class="mb-4">
           <div class="mb-2">
             <input id="fname" name="fname" type="text" placeholder="Name" class="border-b-2 focus:border-b-black outline-none" />
@@ -235,13 +235,13 @@
         
           <input type="hidden" name="form-name" value="contact">
         
-          <div class="text-right">
+          <div class="sm:text-right">
             <button type="submit" class="btn-primary">Send it baby</button>
           </div>
         </form>
       </div>
       <div>
-        <img src="https://images.unsplash.com/photo-1501677110325-0b08be6ad95c?q=80&w=2018&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" class="w-full h-96 object-cover">
+        <img src="https://images.unsplash.com/photo-1501677110325-0b08be6ad95c?q=80&w=2018&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" class="w-full h-50 sm:h-96 object-cover">
       </div>
   </div>
 </div>
@@ -251,9 +251,9 @@
 <!----------Footer-------->
 
 <div class="container mx-auto px-8 border-t-2 mt-8 py-8">
-  <div class="flex justify-between">
-    <div class="grid grid-cols-2">
-      <div class="pr-14">
+  <div class="sm:flex justify-between">
+    <div class="grid grid-cols-2 mb-10 sm:mb-0">
+      <div class="pr-5 sm:pr-14">
         <p>Lorem ipsum</p>
         <nav>
           <a href="#" class="block">Nav 1</a>
@@ -275,7 +275,7 @@
     <div>
       <p class="pb-2">Subscribe to our newsletter</p>
       <input type="email" placeholder="" class="border-2 focus:border-b-black outline-none" />
-      <div class="text-right mt-2">
+      <div class="sm:text-right mt-2">
         <button type="submit" class="btn-primary">Subscribe</button>
       </div>
     </div>

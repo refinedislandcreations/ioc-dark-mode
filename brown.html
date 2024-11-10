@@ -1,0 +1,264 @@
+<!doctype html>
+<html>
+
+<head>
+
+  <!-- SEO  -->
+  <title>My First Tailwind Project</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- GOOGLE FONTS -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lexend+Tera:wght@100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" rel="stylesheet">
+
+  <!-- TAILWIND -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- TAILWIND CUSTOMIZE & EXTEND -->
+  <script>
+    tailwind.config = {
+      darkMode: 'selector',
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
+          }
+        }
+      }
+    }
+  </script>
+
+<!-- TAILWIND CUSTOM CLASSES -->
+<style type="text/tailwindcss">
+  @layer components {
+    .btn-primary {
+      @apply bg-[#78705b] border-2 border-[#78705b] text-[#2f2c24] hover:border-2 hover:border-[#2f2c24] uppercase inline-block py-2 px-6;
+
+    }
+  }
+</style>
+
+  <!-- CUSTOM CSS LINKS -->
+  <link rel="stylesheet" href="style-brown.css">
+
+</head>
+
+<body class="bg-[#5b5545] text-[#f5f1ed]">
+
+  
+<!----------Header----------->
+
+<header class="container mx-auto px-8 min-h-screen flex flex-col mb-6 sm:mb-12">
+
+    <div class="text-center sm:text-left sm:flex justify-between items-center border-b-2 py-5">
+      <p class="mb-5 sm:mb-0">Name of Company</p>
+      <div class="flex items-center">
+        <nav class="flex justify-between sm:justify-center w-full max-w-md gap-3">
+          <a href="#" class="pr-2 inline-block">Nav 1</a>
+          <a href="#" class="pr-2 inline-block">Nav 2</a>
+          <a href="#" class="pr-2 inline-block">Nav 3</a>
+          <a href="#" class="inline-block">Nav 4</a>
+        </nav>
+      </div>
+    </div>
+    <div class="flex flex-col items-end sm:grid sm:grid-cols-2 h-full sm:gap-4 mt-10">
+        <div class="h-full order-first">
+            <img src="https://images.unsplash.com/photo-1621341103897-962959c2cd90?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" class="w-full h-full object-cover">
+          </div>
+      <div>
+        <h1 class="text-3xl sm:text-5xl font-extrabold uppercase">This is a <br> fun heading</h1>
+    
+        <p class="pb-2 sm:pb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel sequi nemo perferendis illum veniam! Pariatur amet facere expedita laudantium, beatae saepe, eaque mollitia ullam animi dolor temporibus? Numquam, architecto adipisci?</p>
+    
+        <a href="#" class="btn-primary">Sign Up</a>
+      </div>
+      <div class="col-span-full">
+        <div class=" grid grid-cols-3 gap-2 sm:gap-4 pb-5">
+        <div>
+          <img src="https://images.unsplash.com/photo-1604603815783-2bd94c5a819f?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" class="h-80 w-full object-cover">
+        </div>
+        <div>
+          <img src="https://images.unsplash.com/photo-1574286962181-e6444e398d03?q=80&w=1936&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" class="h-80 w-full object-cover">
+        </div>
+        <div>
+          <img src="https://images.unsplash.com/photo-1531347058246-6dfef49b7b7b?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" class="h-80 w-full object-cover">
+        </div>
+    </div>
+      </div>
+    
+    </div>
+</header>
+
+
+
+
+<!----------Gallery----------->
+<section class="container mx-auto px-8">
+    <div class="sm:mt-8 mb-2 sm:mb-8 max-w-2xl m-auto text-left sm:text-center">
+      <h2 class="text-3xl sm:text-5xl font-extrabold uppercase pb-1 sm:pb-3">Another <span class="text-base sm:text-lg normal-case block">Sick Heading for Attention</span></h2>
+      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Explicabo enim laboriosam fuga nulla numquam sit, illo pariatur expedita, vitae hic quidem reprehenderit dolore ipsum exercitationem. Tenetur porro at delectus odio! Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam animi nemo labore incidunt reiciendis. </p>
+    </div>
+    <div class="mt-5 sm:mt-10 flex overflow-x-auto gap-4">
+  
+        <img src="https://images.unsplash.com/photo-1586220778893-1fae18067543?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxjb2xsZWN0aW9uLXBhZ2V8MTl8UlNJOU9IVU01WE18fGVufDB8fHx8fA%3D%3D" alt="" class="w-2/3 sm:w-1/4 object-contain shrink-0">
+    
+        <img src="https://images.unsplash.com/photo-1572853566597-b83cde546912?q=80&w=2127&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" class="w-2/3 sm:w-1/4 object-contain shrink-0">
+    
+        <img src="https://images.unsplash.com/photo-1452639608291-23cd58f6864d?q=80&w=1937&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" class="w-2/3 sm:w-1/4 object-contain shrink-0">
+    
+        <img src="https://images.unsplash.com/photo-1515275844947-c28f9c617443?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" class="w-2/3 sm:w-1/4 object-contain shrink-0">
+    
+        <img src="https://images.unsplash.com/photo-1557256728-cd9dbea73286?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" class="w-2/3 sm:w-1/4 object-contain shrink-0">
+
+      
+    </div>    
+    
+
+</section>
+
+
+
+
+<!-----Grid with text-->
+
+<section class="container mx-auto px-8 mt-20">
+    <div class="grid grid-cols-6">
+        <div class="col-span-3 sm:col-span-2 pb-10">
+            <h1 class="font-semibold uppercase text-lg pb-1">Heading</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio assumenda et odit ex, dolorema.</p>
+        </div>
+        <div class="col-span-3 sm:col-span-2 pb-10">
+            <h1 class="font-semibold uppercase text-lg pb-1">Heading</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio assumenda et odit ex, dolorema.</p>
+        </div>
+        <div class="col-span-3 sm:col-span-2 pb-10">
+            <h1 class="font-semibold uppercase text-lg pb-1">Heading</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio assumenda et odit ex, dolorema.</p>
+        </div>
+        <div class="col-span-3 sm:col-span-2 pb-10">
+            <h1 class="font-semibold uppercase text-lg pb-1">Heading</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio assumenda et odit ex, dolorema.</p>
+        </div>
+        <div class="col-span-3 sm:col-span-2 pb-10">
+            <h1 class="font-semibold uppercase text-lg pb-1">Heading</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio assumenda et odit ex, dolorema.</p>
+        </div>
+        <div class="col-span-3 sm:col-span-2 pb-10">
+            <h1 class="font-semibold uppercase text-lg pb-1">Heading</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio assumenda et odit ex, dolorema.</p>
+        </div>
+
+    </div>
+
+</section>
+
+
+
+
+
+<!-------reverse image text-------->
+<section class="container mx-auto px-8">
+<div class="flex flex-col items-end sm:grid sm:grid-cols-2 h-full sm:gap-4 mt-10">
+    
+  <div>
+    <h1 class="text-3xl sm:text-5xl font-extrabold uppercase">This is a <br> fun heading</h1>
+
+    <p class="pb-2 sm:pb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel sequi nemo perferendis illum veniam! Pariatur amet facere expedita laudantium, beatae saepe, eaque mollitia ullam animi dolor temporibus? Numquam, architecto adipisci?</p>
+
+    <a href="#" class="btn-primary">Sign Up</a>
+  </div>
+  <div class="h-full order-first">
+    <img src="https://images.unsplash.com/photo-1579656381229-15bdb188da49?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" class="w-full h-full object-cover">
+  </div>
+</div>
+</section>
+
+
+<!----------Contact-------------->
+
+
+<div class="container mx-auto px-8 mt-20 mb-5 sm:mb-12">
+    <p class="text-3xl sm:text-5xl font-extrabold uppercase pb-8">Contact Us.</p>
+  
+    <div class="flex flex-col sm:grid grid-cols-2">
+        <div class="sm:mr-8">
+          <form name="contact" method="POST" data-netlify="true" class="mb-4">
+            <div class="mb-2">
+              <input id="fname" name="fname" type="text" placeholder="Name" class="border-b-2 focus:border-b-black outline-none" />
+              <label for="fname" class="block"> Any name will do </label>
+            </div>
+          
+            <div class="mb-2">
+              
+              <input id="email" name="email" type="email" placeholder="Email" class="border-b-2 focus:border-b-black outline-none" />
+              <label for="email" class="block"> We prefer something real </label>
+            </div>
+          
+            <div class="mb-4">
+              <label for="message" class="block"> Message </label>
+              <textarea id="message" name="message" placeholder="We love a good compliment" rows="6" class="min-w-full border-2 focus:border-black outline-none"></textarea>
+            </div>
+          
+            <input type="hidden" name="form-name" value="contact">
+          
+            <div class="sm:text-right">
+              <button type="submit" class="btn-primary">Send it baby</button>
+            </div>
+          </form>
+        </div>
+        <div>
+          <img src="https://images.unsplash.com/photo-1564132254865-639bfec4c5bf?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" class="w-full h-50 sm:h-96 object-cover">
+        </div>
+    </div>
+  </div>
+  
+  
+  
+  <!----------Footer-------->
+  
+  <div class="container mx-auto px-8 border-t-2 mt-8 py-8">
+    <div class="sm:flex justify-between">
+      <div class="grid grid-cols-2 mb-10 sm:mb-0">
+        <div class="pr-5 sm:pr-14">
+          <p>Lorem ipsum</p>
+          <nav>
+            <a href="#" class="block">Nav 1</a>
+            <a href="#" class="block">Nav 2</a>
+            <a href="#" class="block">Nav 3</a>
+            <a href="#" class="block">Nav 4</a>
+          </nav>
+        </div>
+        <div>
+          <p>Lorem ipsum</p>
+          <nav>
+            <a href="#" class="block">Nav 1</a>
+            <a href="#" class="block">Nav 2</a>
+            <a href="#" class="block">Nav 3</a>
+            <a href="#" class="block">Nav 4</a>
+          </nav>
+        </div>
+      </div>
+      <div>
+        <p class="pb-2">Subscribe to our newsletter</p>
+        <input type="email" placeholder="" class="border-2 focus:border-b-black outline-none" />
+        <div class="sm:text-right mt-2">
+          <button type="submit" class="btn-primary">Subscribe</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  
+
+
+
+
+
+
+
+
+</body>
+
+</html>
