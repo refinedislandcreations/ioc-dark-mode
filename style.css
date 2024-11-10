@@ -4,12 +4,6 @@ body {
 }
 
 
-
-.dark-mode p {
-  margin-bottom: 0.3rem;
-  font-size: 0.9rem;
-}
-
 .toggle-container {
   background-color: grey;
   height: 2rem;
@@ -34,8 +28,6 @@ body {
   background-color: #ade6d8;
   text-align: right;
 }
-
-
 
 /* Dark Mode Styles */
 .dark-mode-active {

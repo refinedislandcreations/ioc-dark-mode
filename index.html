@@ -11,14 +11,6 @@
   <!-- GOOGLE FONTS -->
 
 
-
-  <!-----JS------>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-  
-  <script src="scripts.js"></script>
-
-
-
   <!-- TAILWIND -->
   <script src="https://cdn.tailwindcss.com"></script>
 
@@ -51,23 +43,22 @@
 
 </head>
 
-<body class="px-10 dark:bg-black dark:text-white">
+<body class=" dark:bg-black dark:text-white">
 
   
 <!------------Header Section-------------->
 
-<header class="min-h-screen flex flex-col mb-12">
+<header class="container mx-auto px-8 min-h-screen flex flex-col mb-6 sm:mb-12">
 
-  <div class="flex justify-between border-b-2 py-5">
-    <p>Name of Company</p>
-    <div>
-      <div class="dark-mode pr-2 inline-block">
-        <p> Dark Mode </p>
-        <button class="toggle-container">
+  <div class="text-center sm:text-left sm:flex justify-between items-center border-b-2 py-5">
+    <p class="mb-5 sm:mb-0">Name of Company</p>
+    <div class="flex items-center">
+      <div class="hidden sm:inline-block dark-mode pr-4">
+        <button onclick="document.body.classList.toggle('dark')" class="toggle-container">
           <div class="toggle-ball"></div>
         </button>
       </div>
-      <nav class="flex gap-3">
+      <nav class="flex justify-between sm:justify-center w-full max-w-md gap-3">
         <a href="#" class="pr-2 inline-block">Nav 1</a>
         <a href="#" class="pr-2 inline-block">Nav 2</a>
         <a href="#" class="pr-2 inline-block">Nav 3</a>
@@ -78,7 +69,7 @@
   </div>
 
   <div class="mt-10 mb-8">
-    <h1 class="text-5xl font-extrabold uppercase">This is a <br> fun heading</h1>
+    <h1 class="text-3xl sm:text-5xl font-extrabold uppercase">This is a <br> fun heading</h1>
   </div>
 
   <div class="grow relative">
@@ -86,17 +77,17 @@
   </div>
 
   <div class="grid grid-cols-6 mt-8 mb-8">
-    <div>
+    <div class="col-span-2 sm:col-span-1">
       <p class="uppercase font-semibold">Fact:<br><span class="font-bold text-2xl">900</span></p>
     </div>
-    <div>
+    <div class="col-span-2 sm:col-span-1">
       <p class="uppercase font-semibold">Fact:<br><span class="font-bold text-2xl">Y2K</span></p>
     </div>
-    <div>
+    <div class="col-span-2 sm:col-span-1">
       <p class="uppercase font-semibold">Fact:<br><span class="font-bold text-2xl">420K</span></p>
     </div>
 
-    <div class="col-span-3">
+    <div class="col-span-full sm:col-span-3 pt-2 sm:pt-0">
       <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus debitis eligendi ipsum numquam culpa non, laudantium itaque alias, atque fuga ipsam temporibus dolorum ullam cum fugiat possimus error eum esse!</p>
     </div>
   </div>
@@ -106,84 +97,89 @@
 
 
 <!----------Gallery----------->
+<section class="container mx-auto px-8">
+  <div class="sm:mt-8 mb-2 sm:mb-8 max-w-2xl m-auto text-left sm:text-center">
+    <h2 class="text-3xl sm:text-5xl font-extrabold uppercase pb-1 sm:pb-3">Another <span class="text-lg normal-case block">Sick Heading for Attention</span></h2>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Explicabo enim laboriosam fuga nulla numquam sit, illo pariatur expedita, vitae hic quidem reprehenderit dolore ipsum exercitationem. Tenetur porro at delectus odio! Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam animi nemo labore incidunt reiciendis. Iste omnis vel, iusto minus eligendi quaerat enim fugit laudantium consectetur incidunt nisi consequuntur deleniti adipisci?</p>
+  </div>
+  
+  <div class="grid grid-cols-2 sm:grid-cols-3 gap-2 sm:gap-4 pb-5">
+    <div>
+      <img src="https://images.unsplash.com/photo-1445699269025-bcc2c8f3faee?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" class="aspect-square w-full object-cover">
+    </div>
+    <div>
+      <img src="https://images.unsplash.com/photo-1445699269025-bcc2c8f3faee?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" class="aspect-square w-full object-cover">
+    </div>
+    <div>
+      <img src="https://images.unsplash.com/photo-1445699269025-bcc2c8f3faee?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" class="aspect-square w-full object-cover">
+    </div>
+    <div>
+      <img src="https://images.unsplash.com/photo-1445699269025-bcc2c8f3faee?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" class="aspect-square w-full object-cover">
+    </div>
+    <div>
+      <img src="https://images.unsplash.com/photo-1445699269025-bcc2c8f3faee?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" class="aspect-square w-full object-cover">
+    </div>
+    <div>
+      <img src="https://images.unsplash.com/photo-1445699269025-bcc2c8f3faee?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" class="aspect-square w-full object-cover">
+    </div>
+  </div>
+  
+  <div class="flex justify-center">
+    <a href="#" class="btn-primary">Sign Up</a>
+  </div>
+</section>
 
-<div class="mt-8 mb-8 max-w-2xl m-auto text-center">
-  <h2 class="text-5xl font-extrabold uppercase pb-3">Another <span class="text-lg normal-case block">Sick Heading for Attention</span></h2>
-  <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Explicabo enim laboriosam fuga nulla numquam sit, illo pariatur expedita, vitae hic quidem reprehenderit dolore ipsum exercitationem. Tenetur porro at delectus odio! Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam animi nemo labore incidunt reiciendis. Iste omnis vel, iusto minus eligendi quaerat enim fugit laudantium consectetur incidunt nisi consequuntur deleniti adipisci?</p>
-</div>
-
-<div class="grid grid-cols-3 gap-4 pb-5">
-  <div>
-    <img src="https://images.unsplash.com/photo-1445699269025-bcc2c8f3faee?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" class="aspect-square w-full object-cover">
-  </div>
-  <div>
-    <img src="https://images.unsplash.com/photo-1445699269025-bcc2c8f3faee?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" class="aspect-square w-full object-cover">
-  </div>
-  <div>
-    <img src="https://images.unsplash.com/photo-1445699269025-bcc2c8f3faee?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" class="aspect-square w-full object-cover">
-  </div>
-  <div>
-    <img src="https://images.unsplash.com/photo-1445699269025-bcc2c8f3faee?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" class="aspect-square w-full object-cover">
-  </div>
-  <div>
-    <img src="https://images.unsplash.com/photo-1445699269025-bcc2c8f3faee?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" class="aspect-square w-full object-cover">
-  </div>
-  <div>
-    <img src="https://images.unsplash.com/photo-1445699269025-bcc2c8f3faee?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" class="aspect-square w-full object-cover">
-  </div>
-</div>
-
-<div class="flex justify-center">
-  <a href="#" class="btn-primary">Sign Up</a>
-</div>
 
 
 
 <!----------Text Image Section----------->
 
-
-<div class="mt-24 mb-8">
-  <h1 class="text-5xl font-extrabold uppercase">This is a <br> fun heading</h1>
-</div>
-
-
-<div class="grid grid-cols-2 h-full">
-  <div>
-    <p class="uppercase font-bold text-base pb-8">Another<br><span class="font-normal normal-case text-sm border-t-2">Sick Heading for Attention</span></p>
-
-    <p class="pb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel sequi nemo perferendis illum veniam! Pariatur amet facere expedita laudantium, beatae saepe, eaque mollitia ullam animi dolor temporibus? Numquam, architecto adipisci?</p>
-
-    <p class="pb-8">Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic dicta pariatur eius aliquam harum inventore quam animi neque, odio saepe cupiditate, corrupti et quaerat obcaecati officia ducimus officiis, ullam aperiam! Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam architecto, vel aut repudiandae recusandae vitae nesciunt dolore enim sunt quasi at sit dicta necessitatibus quaerat aliquid totam odit unde cumque.</p>
-
-    <a href="#" class="btn-primary">Sign Up</a>
+<section class="container mx-auto px-8">
+  <div class="mt-12 sm:mt-24 mb-2 sm:mb-8">
+    <h1 class="text-3xl sm:text-5xl font-extrabold uppercase">This is a <br> fun heading</h1>
   </div>
-  <div class="h-full">
-    <img src="https://images.unsplash.com/photo-1500491460312-c32fc2dbc751?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" class="w-full h-full object-cover">
+  
+  
+  <div class="flex flex-col sm:grid sm:grid-cols-2 h-full">
+    <div>
+      <p class="uppercase font-bold text-base mt-2 sm:mt-0 pb-2 sm:pb-8">Another<br><span class="font-normal normal-case text-sm border-t-2">Sick Heading for Attention</span></p>
+  
+      <p class="pb-2 sm:pb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel sequi nemo perferendis illum veniam! Pariatur amet facere expedita laudantium, beatae saepe, eaque mollitia ullam animi dolor temporibus? Numquam, architecto adipisci?</p>
+  
+      <p class="pb-4 sm:pb-8">Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic dicta pariatur eius aliquam harum inventore quam animi neque, odio saepe cupiditate, corrupti et quaerat obcaecati officia ducimus officiis, ullam aperiam! Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam architecto, vel aut repudiandae recusandae vitae nesciunt dolore enim sunt quasi at sit dicta necessitatibus quaerat aliquid totam odit unde cumque.</p>
+  
+      <a href="#" class="btn-primary">Sign Up</a>
+    </div>
+    <div class="h-full order-first">
+      <img src="https://images.unsplash.com/photo-1500491460312-c32fc2dbc751?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" class="w-full h-full object-cover">
+    </div>
+  
   </div>
+</section>
 
-</div>
+
 
 
 
 <!-------Big Block of Text-------->
-
-<div class="border-t-2 border-b-2 text-center my-32">
-  <div class="p-12">
-    <h3 class="text-5xl font-extrabold uppercase">Sometimes all you need is a big random block of text to really drive home the point.</h3>
+<div class="container mx-auto px-8">
+  <div class="border-t-2 border-b-2 text-center my-20 sm:my-32">
+    <div class="py-6 sm:px-12 sm:py-12">
+      <h3 class="text-3xl sm:text-5xl font-extrabold uppercase">Sometimes all you need is a big random block of text to really drive home the point.</h3>
+    </div>
   </div>
 </div>
 
-
 <!----------Rotate text-------->
 
-<div class="mt-10 mb-24">
+<div class="container mt-10 mb-24">
 
 	<div class="relative">
 		<p class="[writing-mode:vertical-rl] rotate-180 absolute left-0 text-5xl font-extrabold uppercase"> Gallery </p>
 
-    <p class="pb-4 ml-20">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est iste reiciendis placeat, molestias autem incidunt aut iure, eos veritatis illum itaque eveniet magni, blanditiis animi veniam. Pariatur tenetur magni vero?</p>
-    <p class="pb-4 ml-20">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione error harum eligendi quasi, perferendis soluta! Illo ea optio alias tenetur, sit dicta fugiat magnam, tempora natus quidem ut error quaerat. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque id corrupti temporibus neque quaerat facere repudiandae eius explicabo iure cumque quidem sapiente, vel beatae facilis dolor nostrum sequi quo cum.</p>
-    <a href="#" class="btn-primary ml-20 mt-10">Sign Up</a>
+    <p class="pb-4 ml-14 sm:ml-20 mr-2 sm:mr-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est iste reiciendis placeat, molestias autem incidunt aut iure, eos veritatis illum itaque eveniet magni, blanditiis animi veniam. Pariatur tenetur magni vero?</p>
+    <p class="pb-4 ml-14 sm:ml-20 mr-2 sm:mr-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione error harum eligendi quasi, perferendis soluta! Illo ea optio alias tenetur, sit dicta fugiat magnam, tempora natus quidem ut error quaerat. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque id corrupti temporibus neque quaerat facere repudiandae eius explicabo iure cumque quidem sapiente, vel beatae facilis dolor nostrum sequi quo cum.</p>
+    <a href="#" class="btn-primary ml-14 sm:ml-20 mr-2 sm:mr-0 mt-2 sm:mt-10">Sign Up</a>
 	</div>
 
 </div>
@@ -194,19 +190,19 @@
 
 <!----Gallery------->
 
-<div class="mt-10 flex overflow-x-auto gap-4">
+<div class="container mx-auto px-8 mt-10 flex overflow-x-auto gap-4">
   
-    <img src="https://images.unsplash.com/photo-1615192232476-758a110dac9f?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" class="w-1/4 object-contain shrink-0">
+    <img src="https://images.unsplash.com/photo-1615192232476-758a110dac9f?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" class="w-2/3 sm:w-1/4 object-contain shrink-0">
 
-    <img src="https://images.unsplash.com/photo-1520262494112-9fe481d36ec3?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" class="w-1/4 object-contain shrink-0">
+    <img src="https://images.unsplash.com/photo-1520262494112-9fe481d36ec3?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" class="w-2/3 sm:w-1/4 object-contain shrink-0">
 
-    <img src="https://images.unsplash.com/photo-1615192232476-758a110dac9f?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" class="w-1/4 object-contain shrink-0">
+    <img src="https://images.unsplash.com/photo-1615192232476-758a110dac9f?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" class="w-2/3 sm:w-1/4 object-contain shrink-0">
 
-    <img src="https://images.unsplash.com/photo-1520262494112-9fe481d36ec3?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" class="w-1/4 object-contain shrink-0">
+    <img src="https://images.unsplash.com/photo-1520262494112-9fe481d36ec3?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" class="w-2/3 sm:w-1/4 object-contain shrink-0">
 
-    <img src="https://images.unsplash.com/photo-1615192232476-758a110dac9f?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" class="w-1/4 object-contain shrink-0">
+    <img src="https://images.unsplash.com/photo-1615192232476-758a110dac9f?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" class="w-2/3 sm:w-1/4 object-contain shrink-0">
 
-    <img src="https://images.unsplash.com/photo-1520262494112-9fe481d36ec3?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" class="w-1/4 object-contain shrink-0">
+    <img src="https://images.unsplash.com/photo-1520262494112-9fe481d36ec3?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" class="w-2/3 sm:w-1/4 object-contain shrink-0">
   
 </div>
 
@@ -215,8 +211,8 @@
 <!----------Contact-------------->
 
 
-<div class="mt-32 mb-12">
-  <p class="text-5xl font-extrabold uppercase pb-8">Contact Us.</p>
+<div class="container mx-auto px-8 mt-32 mb-12">
+  <p class="text-3xl sm:text-5xl font-extrabold uppercase pb-8">Contact Us.</p>
 
   <div class="grid grid-cols-2">
       <div class="mr-8">
@@ -254,7 +250,7 @@
 
 <!----------Footer-------->
 
-<div class="border-t-2 mt-8 py-8">
+<div class="container mx-auto px-8 border-t-2 mt-8 py-8">
   <div class="flex justify-between">
     <div class="grid grid-cols-2">
       <div class="pr-14">
